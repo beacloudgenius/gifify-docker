@@ -1,8 +1,7 @@
-FROM ubuntu:14.04
+FROM ubuntu:20.04
 
 RUN apt-get update
 RUN apt-get -y install software-properties-common
-RUN add-apt-repository ppa:jon-severinsson/ffmpeg
 RUN apt-get update
 RUN apt-get -y install ffmpeg unzip imagemagick curl
 
